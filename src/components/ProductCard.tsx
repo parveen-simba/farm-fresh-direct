@@ -43,13 +43,13 @@ const ProductCard = ({ product }: { product: Product }) => {
           </div>
           <div className="flex gap-1.5">
             <button
-              onClick={() => { addToCart(product); toast.success("Added to cart"); }}
+              onClick={() => { addToCart(product); toast.success("Added to cart", { duration: 1000 }); }}
               className="flex h-8 w-8 items-center justify-center rounded-xl bg-primary text-primary-foreground transition-all active:scale-90 hover:bg-primary/80"
             >
               <Plus className="h-4 w-4" />
             </button>
             <button
-              onClick={() => { addToCart(product); toast.success("Added to Dailies"); }}
+              onClick={() => { addToCart(product); toast.success("Added to Dailies", { duration: 1000 }); }}
               className="flex h-8 w-8 items-center justify-center rounded-xl bg-secondary text-secondary-foreground transition-all active:scale-90 hover:bg-secondary/80"
               title="Add to Dailies"
             >

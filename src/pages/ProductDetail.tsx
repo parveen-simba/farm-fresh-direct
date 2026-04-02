@@ -113,13 +113,13 @@ const ProductDetail = () => {
           {/* Desktop CTA */}
           <div className="hidden lg:flex gap-3 pt-2">
             <button
-              onClick={() => { addToCart(product, quantity); toast.success("Added to Dailies"); }}
+              onClick={() => { addToCart(product, quantity); toast.success("Added to Dailies", { duration: 1000 }); }}
               className="flex h-12 flex-1 items-center justify-center gap-2 rounded-2xl bg-secondary text-sm font-semibold text-secondary-foreground transition-all active:scale-95 hover:bg-secondary/80"
             >
               <CalendarPlus className="h-4 w-4" /> Add to Dailies
             </button>
             <button
-              onClick={() => { addToCart(product, quantity); toast.success("Added to cart"); }}
+              onClick={() => { addToCart(product, quantity); toast.success("Added to cart", { duration: 1000 }); }}
               className="flex h-12 flex-[2] items-center justify-center gap-2 rounded-2xl bg-primary text-sm font-semibold text-primary-foreground transition-all active:scale-95 glow-primary hover:bg-primary/90"
             >
               <ShoppingCart className="h-4 w-4" /> Add to Cart · ₹{product.price * quantity}
@@ -132,13 +132,13 @@ const ProductDetail = () => {
       <div className="fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-background/90 backdrop-blur-xl lg:hidden">
         <div className="mx-auto flex max-w-lg gap-3 px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))]">
           <button
-            onClick={() => { addToCart(product, quantity); toast.success("Added to Dailies"); }}
+            onClick={() => { addToCart(product, quantity); toast.success("Added to Dailies", { duration: 1000 }); }}
             className="flex h-12 flex-1 items-center justify-center gap-2 rounded-2xl bg-secondary text-sm font-semibold text-secondary-foreground transition-transform active:scale-95"
           >
             <CalendarPlus className="h-4 w-4" /> Dailies
           </button>
           <button
-            onClick={() => { addToCart(product, quantity); toast.success("Added to cart"); }}
+            onClick={() => { addToCart(product, quantity); toast.success("Added to cart", { duration: 1000 }); }}
             className="flex h-12 flex-[2] items-center justify-center gap-2 rounded-2xl bg-primary text-sm font-semibold text-primary-foreground transition-transform active:scale-95 glow-primary"
           >
             <ShoppingCart className="h-4 w-4" /> Add · ₹{product.price * quantity}

@@ -60,7 +60,7 @@ const Orders = () => {
               <button
                 onClick={() => {
                   order.items.forEach(i => addToCart(i.product, i.quantity));
-                  toast.success("Items added to cart");
+                  toast.success("Items added to cart", { duration: 1000 });
                 }}
                 className="flex w-full items-center justify-center gap-2 border-t border-border/50 py-2.5 text-xs font-semibold text-primary transition-colors hover:bg-primary/5"
               >
