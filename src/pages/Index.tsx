@@ -15,7 +15,7 @@ const Index = () => {
               <MapPin className="h-4 w-4 text-primary" />
               <div>
                 <p className="text-xs text-muted-foreground">Delivering to</p>
-                <p className="text-sm font-semibold text-foreground">Koramangala, Bangalore</p>
+                <p className="text-sm font-semibold text-foreground">Ludhiana, Punjab</p>
               </div>
             </div>
             {/* Desktop search */}

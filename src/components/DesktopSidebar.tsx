@@ -1,6 +1,7 @@
 import { Home, ShoppingBag, ShoppingCart, User, Leaf, CalendarCheck } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useCart } from "@/contexts/CartContext";
+import ThemeToggle from "./ThemeToggle";
 
 const navItems = [
   { icon: Home, label: "Home", path: "/" },
@@ -24,6 +25,7 @@ const DesktopSidebar = () => {
           <h1 className="text-base font-bold text-foreground">FarmFresh</h1>
           <p className="text-[10px] text-muted-foreground">Farm to Table</p>
         </div>
+        <ThemeToggle className="ml-auto" />
       </div>
 
       <nav className="flex-1 px-3 py-4 space-y-1">
@@ -49,7 +51,8 @@ const DesktopSidebar = () => {
       </nav>
 
       <div className="px-4 py-4 border-t border-border/50">
-        <div className="glass-card p-3 text-center">
+        <div className="glass-card p-3 text-center space-y-3">
+          <ThemeToggle showLabel className="w-full justify-center" />
           <p className="text-xs text-muted-foreground">🌱 Freshness Guarantee</p>
           <p className="text-[10px] text-muted-foreground mt-1">Direct from farmers, always fresh</p>
         </div>

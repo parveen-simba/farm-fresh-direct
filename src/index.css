@@ -6,6 +6,53 @@
 
 @layer base {
   :root {
+    --background: 40 33% 97%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 142 72% 29%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 40 20% 94%;
+    --secondary-foreground: 222 47% 11%;
+
+    --muted: 40 18% 95%;
+    --muted-foreground: 215 16% 45%;
+
+    --accent: 142 72% 40%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 90%;
+    --input: 214 32% 90%;
+    --ring: 142 72% 29%;
+
+    --radius: 0.75rem;
+
+    --success: 142 72% 40%;
+    --success-foreground: 222 47% 11%;
+
+    --harvest-fresh: 142 72% 40%;
+    --harvest-recent: 38 92% 55%;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 142 72% 29%;
+    --sidebar-primary-foreground: 210 40% 98%;
+    --sidebar-accent: 40 20% 94%;
+    --sidebar-accent-foreground: 222 47% 11%;
+    --sidebar-border: 214 32% 90%;
+    --sidebar-ring: 142 72% 29%;
+  }
+
+  .dark {
     --background: 222 47% 11%;
     --foreground: 210 40% 98%;
 
@@ -34,14 +81,6 @@
     --input: 217 33% 25%;
     --ring: 142 72% 29%;
 
-    --radius: 0.75rem;
-
-    --success: 142 72% 40%;
-    --success-foreground: 222 47% 11%;
-
-    --harvest-fresh: 142 72% 40%;
-    --harvest-recent: 38 92% 55%;
-
     --sidebar-background: 222 47% 9%;
     --sidebar-foreground: 210 40% 98%;
     --sidebar-primary: 142 72% 29%;
@@ -57,8 +96,14 @@
   * {
     @apply border-border;
   }
+  html {
+    color-scheme: light;
+  }
+  html.dark {
+    color-scheme: dark;
+  }
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground font-sans antialiased transition-colors duration-300;
   }
 }
 
@@ -76,11 +121,11 @@
     background: linear-gradient(135deg, hsl(var(--primary)), hsl(142 72% 22%));
   }
   .gradient-card {
-    background: linear-gradient(180deg, hsl(var(--card)), hsl(222 47% 9%));
+    background: linear-gradient(180deg, hsl(var(--card)), hsl(var(--background)));
   }
   .text-gradient {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(142 72% 40%), hsl(142 60% 55%));
+    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
   }
   .safe-bottom {
     padding-bottom: calc(5rem + env(safe-area-inset-bottom, 0px));
