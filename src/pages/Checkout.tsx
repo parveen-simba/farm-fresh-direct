@@ -51,7 +51,7 @@ const Checkout = () => {
               <div className="rounded-xl bg-primary/10 p-2"><MapPin className="h-5 w-5 text-primary" /></div>
               <div className="flex-1">
                 <h3 className="text-sm font-semibold text-foreground">Delivery Address</h3>
-                <p className="text-xs text-muted-foreground mt-1">42, 3rd Cross, Koramangala 5th Block, Bangalore - 560095</p>
+                <p className="text-xs text-muted-foreground mt-1">Gill Park, Gill Road, Ludhiana - 141006, Punjab</p>
               </div>
               <button className="text-xs text-primary font-medium hover:underline">Change</button>
             </div>

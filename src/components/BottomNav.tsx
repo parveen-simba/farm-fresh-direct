@@ -1,6 +1,7 @@
 import { Home, ShoppingBag, ShoppingCart, User } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 import { useCart } from "@/contexts/CartContext";
+import ThemeToggle from "./ThemeToggle";
 
 const navItems = [
   { icon: Home, label: "Home", path: "/" },
@@ -32,6 +33,10 @@ const BottomNav = () => {
             </Link>
           );
         })}
+        <ThemeToggle
+          className="h-auto w-auto flex-col gap-0.5 rounded-none border-0 bg-transparent px-4 py-1 shadow-none hover:bg-transparent"
+          showLabel
+        />
       </div>
     </nav>
   );

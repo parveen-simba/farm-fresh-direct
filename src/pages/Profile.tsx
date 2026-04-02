@@ -27,8 +27,8 @@ const Profile = () => (
             <User className="h-8 w-8 text-primary" />
           </div>
           <div className="text-center">
-            <h2 className="text-base font-bold text-foreground">Priya Sharma</h2>
-            <p className="text-xs text-muted-foreground">+91 98765 43210</p>
+            <h2 className="text-base font-bold text-foreground">Jasdeep Singh</h2>
+            <p className="text-xs text-muted-foreground">+91 85570 82105</p>
           </div>
         </div>
       </div>
