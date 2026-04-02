@@ -32,7 +32,7 @@ This project focuses on simplicity, trust, and freshness by providing a clean in
 ## 🧠 Concept
 
 The idea behind this project is to simplify how users buy vegetables while supporting local farmers.
-Users can order instantly, schedule deliveries, or subscribe to daily essentials like milk and vegetables.
+Users can order instantly, schedule deliveries, or subscribe to daily essentials.
 
 ---
 
@@ -54,19 +54,36 @@ Users can order instantly, schedule deliveries, or subscribe to daily essentials
 * Dark theme with green accents 🌿
 * Clean layout with proper spacing
 * Rounded cards and soft shadows
-* Mobile-first design approach
-* Desktop optimized with grid layouts and sidebar
+* Mobile-first design
+* Desktop optimized layouts
 
 ---
 
 ## 🛠️ Tech Stack
 
-* Frontend: React.js
-* Styling: Tailwind CSS
-* State Management: (as per implementation)
-* Deployment: (add your platform – Vercel / Netlify)
+* React.js
+* Tailwind CSS
+
+---
+
+## ▶️ How to Run
+
+1. Clone the repository
+
+   git clone https://github.com/your-username/your-repo-name.git
 
 
+2. Go to project folder
+   cd your-repo-name
+
+3. Install dependencies
+   npm install
+
+4. Start development server
+   npm run dev
+
+5. Open in browser
+   http://localhost:5173
 ---
 
 ## ⚡ Future Improvements
@@ -78,7 +95,6 @@ Users can order instantly, schedule deliveries, or subscribe to daily essentials
 
 ## 🏁 Conclusion
 
-This project demonstrates a scalable and user-friendly marketplace focused on fresh vegetable delivery.
-It combines modern UI/UX with practical features like subscriptions and direct sourcing.
+A scalable and user-friendly marketplace focused on fresh vegetable delivery with modern UI/UX and subscription features.
 
 ---
