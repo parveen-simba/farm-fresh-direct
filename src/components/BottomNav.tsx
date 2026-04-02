@@ -14,7 +14,7 @@ const BottomNav = () => {
   const { totalItems } = useCart();
 
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-background/90 backdrop-blur-xl">
+    <nav className="fixed bottom-0 left-0 right-0 z-50 border-t border-border bg-background/90 backdrop-blur-xl lg:hidden">
       <div className="mx-auto flex max-w-lg items-center justify-around py-2 pb-[max(0.5rem,env(safe-area-inset-bottom))]">
         {navItems.map(({ icon: Icon, label, path }) => {
           const active = location.pathname === path || (path === "/orders" && location.pathname.startsWith("/order"));
